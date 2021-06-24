@@ -57,7 +57,7 @@ const Contacts = styled.div`
     }
 `;
 
-const ThanksPage = () => {
+const Footer = () => {
     return (
         <Container>
             <Messages>
@@ -71,10 +71,9 @@ const ThanksPage = () => {
 
             <Contacts>
                 <div>Contacts</div>
-                <p>010.6623.0541</p>
                 <p>soo054141@gmail.com</p>
             </Contacts>
         </Container>
     );
 };
-export default ThanksPage;
+export default Footer;

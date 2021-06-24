@@ -1,16 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Main from "./components/main";
-import Login from "./components/works/Login";
-import Todo from "./components/works/Todo";
-import Cal from "./components/works/Cal";
-import ThanksPage from "./components/profile/ThanksPage";
+import React, { useRef } from "react";
+import Header from "./components/Header";
+import Login from "./components/pages/Login";
+import Todo from "./components/pages/Todo";
+import Cal from "./components/pages/Cal";
+import Introduce from "./components/pages/Introduce";
+import Footer from "./components/Footer";
+import TopBtn from "./components/pages/TopBtn";
 
 function Home() {
+    const ReviewRef = useRef();
+
+    const handleIndexClick = () =>
+        ReviewRef.current.scrollIntoView({
+            behavior: "smooth",
+            inline: "start",
+        });
+
     return (
         <>
-            <div>
-                <Main />
+            <div ref={ReviewRef}>
+                <Header />
             </div>
             <div>
                 <Login />
@@ -22,18 +31,14 @@ function Home() {
                 <Cal />
             </div>
             <div>
-                <ThanksPage />
-            </div>
-            {/* <div>
-                <button>
-                    <Link to="/profile">Profile</Link>
-                </button>
+                <Introduce />
             </div>
             <div>
-                <button>
-                    <Link to="/works">Works</Link>
-                </button>
-            </div> */}
+                <Footer />
+            </div>
+            <div onClick={handleIndexClick}>
+                <TopBtn />
+            </div>
         </>
     );
 }

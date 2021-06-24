@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
     width: 100%;
     margin: 0 auto;
+    height: 93rem;
 
     @media screen and (max-width: 767px) {
         height: 80em;
@@ -86,7 +87,7 @@ const Name_box = styled.div`
     }
 `;
 
-const Main = () => {
+const Header = () => {
     return (
         <Container>
             <Title_box>
@@ -104,4 +105,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default Header;

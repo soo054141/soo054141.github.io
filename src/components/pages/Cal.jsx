@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import imgC from "../images/box3.png";
+import imgA from "../images/box2.png";
 
 const Container = styled.div`
     width: 100%;
@@ -11,7 +11,7 @@ const Container = styled.div`
 
     @media screen and (max-width: 767px) {
         margin-bottom: 8rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 `;
 
@@ -23,7 +23,7 @@ const InfoWrap = styled.div`
 
     div {
         width: 88%;
-        margin: 4.5% 0% 0% 7%;
+        margin: 4.5% 0% 0% 11.428%;
     }
     h1 {
         font-size: 3.2rem;
@@ -49,19 +49,9 @@ const InfoWrap = styled.div`
         line-height: 1.5;
     }
 
-    @media screen and (min-width: 1024px) and (max-width: 1440px) {
-        div {
-            width: 80%;
-        }
-    }
-
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         height: 60rem;
 
-        div {
-            width: 90%;
-            margin-left: 3%;
-        }
         h1 {
             font-size: 3rem;
         }
@@ -74,6 +64,7 @@ const InfoWrap = styled.div`
             font-size: 1.3rem;
         }
     }
+
     @media screen and (max-width: 767px) {
         width: 100%;
         padding: 2rem 0 0 1rem;
@@ -109,16 +100,13 @@ const ImgWrap = styled.div`
     }
 `;
 
-const Todo = () => {
+const Cal = () => {
     return (
         <Container>
-            <ImgWrap>
-                <img src={imgC} alt="line" />
-            </ImgWrap>
             <InfoWrap>
                 <div>
-                    <h1>일정 관리 페이지</h1>
-                    <h2>[To-do List]</h2>
+                    <h1>계산기</h1>
+                    <h2>[Calculator]</h2>
                 </div>
                 <div>
                     <p>
@@ -130,33 +118,37 @@ const Todo = () => {
                     </p>
                     <p>
                         <span>사용기술</span>
-                        JavaScript, styled-components, ReactJS
+                        Vanila JS, CSS3, HTML5
                     </p>
                 </div>
                 <div>
                     <h3>상세설명</h3>
                     <p>
-                        할 일 목록을 추가, 삭제하는 기능을 구현한 페이지
+                        바닐라 자바스크립트로 간단한 사칙연산을 할 수 있는
                         <br />
-                        React의 styled-components로 디자인 및 웹 사이트 구축,
-                        <br /> 사용자가 이용하는 날짜를 실시간으로 반영하여
-                        보여주는 기능과
+                        계산기 기능을 구현하였습니다.
                         <br />
-                        일정을 추가 및 삭제, 완료된 목록을 체크하는 기능이
-                        있습니다.
+                        Equal 사인을 누르지 않고도 다른 기호를 누르면 화면에
+                        <br />
+                        계산된 결과 값이 출력됩니다.
                     </p>
                 </div>
                 <div>
                     <h3>Repo</h3>
                     <p>
-                        <a href="https://yurimi95.github.io/todo/">
-                            https://yurimi95.github.io/todo/
+                        <a href="https://yurimi95.github.io/Calculator/">
+                            https://yurimi95.github.io/Calculator/
                         </a>
                     </p>
                 </div>
             </InfoWrap>
+            <ImgWrap>
+                <a href="https://yurimi95.github.io/Calculator/">
+                    <img src={imgA} alt="line" />
+                </a>
+            </ImgWrap>
         </Container>
     );
 };
 
-export default Todo;
+export default Cal;

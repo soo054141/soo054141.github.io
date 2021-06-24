@@ -132,14 +132,16 @@ const Login = () => {
                 <div>
                     <h3>Repo</h3>
                     <p>
-                        <a href="https://yurimi95.github.io/Login-Page/">
-                            https://yurimi95.github.io/Login-Page/
+                        <a href="https://github.com/yurimi95/Login-Page">
+                            https://github.com/yurimi95/Login-Page
                         </a>
                     </p>
                 </div>
             </InfoWrap>
             <ImgWrap>
-                <img src={imgB} alt="works1" />
+                <a href="https://github.com/yurimi95/Login-Page">
+                    <img src={imgB} alt="works1" />
+                </a>
             </ImgWrap>
         </Container>
     );
