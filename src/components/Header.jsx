@@ -4,7 +4,6 @@ import styled from "styled-components";
 const Container = styled.div`
     width: 100%;
     margin: 0 auto;
-    height: 93rem;
 
     @media screen and (max-width: 767px) {
         height: 80em;
@@ -53,7 +52,7 @@ const Name_box = styled.div`
         margin-left: -0.5rem;
     }
     h3 {
-        margin: 1rem 0rem 3.5rem 0rem;
+        margin: 1rem 0rem 1rem 0rem;
         font-size: 2rem;
     }
     p {
@@ -97,7 +96,6 @@ const Header = () => {
             <Name_box>
                 <h1>김유림</h1>
                 <h3>KIM YURIM</h3>
-                <p>010.6623.0541</p>
                 <p>soo054141@gmail.com</p>
                 <h6>https://github.com/soo054141</h6>
             </Name_box>

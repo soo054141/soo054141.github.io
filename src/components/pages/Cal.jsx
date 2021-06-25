@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import imgA from "../images/box2.png";
+import useScrollFadeIn from "./useScrollFadeIn";
 
 const Container = styled.div`
     width: 100%;
@@ -101,8 +102,9 @@ const ImgWrap = styled.div`
 `;
 
 const Cal = () => {
+    const animatedItem = useScrollFadeIn();
     return (
-        <Container>
+        <Container {...animatedItem}>
             <InfoWrap>
                 <div>
                     <h1>계산기</h1>
