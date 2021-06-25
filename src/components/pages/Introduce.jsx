@@ -3,24 +3,18 @@ import styled from "styled-components";
 
 const Wrap = styled.div`
     width: 100%;
-    padding-top: 15rem;
+    height: 83rem;
+    padding-top: 10rem;
     line-height: 1.3;
+
+    @media screen and (max-width: 1919px) {
+        height: auto;
+    }
 `;
 
 const Container = styled.div`
     width: 89%;
-    height: 83rem;
     margin: 0 auto;
-
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        height: auto;
-        background-color: red;
-    }
-    @media screen and (max-width: 767px) {
-        width: 98%;
-        height: auto;
-        padding-top: 10rem;
-    }
 `;
 
 const Name_title = styled.div`
@@ -31,10 +25,22 @@ const Name_title = styled.div`
         font-size: 4rem;
         color: #212121;
     }
+
     h3 {
         margin-left: 0.3rem;
         font-size: 2rem;
         color: #3a3a3a;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            margin-left: 0.2rem;
+            font-size: 1.6rem;
+        }
     }
 `;
 
@@ -45,14 +51,26 @@ const SkillSection = styled.div`
     justify-content: space-between;
     border-bottom: 2px solid #d8ccdb;
 
-    @media screen and (max-width: 1023px) {
-        flex-direction: column;
+    @media screen and (max-width: 1439px) {
+        display: block;
+
+        h4 {
+            margin: 0% 10%;
+        }
+        p {
+            text-align: center;
+            padding-bottom: 4rem;
+        }
     }
 `;
 
 const SectionTitle = styled.div`
     font-weight: bold;
     font-size: 1.9rem;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 1rem;
+    }
 `;
 
 const SectionItems = styled.div`
@@ -63,19 +81,27 @@ const SectionItems = styled.div`
     h4 {
         font-weight: bold;
         font-size: 1.9rem;
+        margin-bottom: 1rem;
     }
 
     p {
-        margin-top: 1rem;
         font-size: 1.6rem;
         color: #74746f;
     }
 
-    @media screen and (max-width: 1023px) {
-        padding-top: 2rem;
-
+    @media screen and (max-width: 1439px) {
         div {
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h4 {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1.3rem;
         }
     }
 `;
@@ -86,18 +112,21 @@ const IntroSection = styled.div`
     justify-content: space-between;
     align-items: stretch;
 
-    @media screen and (max-width: 1023px) {
-        flex-direction: column;
+    @media screen and (max-width: 1439px) {
+        display: block;
     }
 `;
 
 const CardBody = styled.div`
     margin-bottom: 2.6rem;
+    width: 100%;
 
     div {
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
+
     h5 {
         margin-top: 0.25rem;
         font-size: 1.6rem;
@@ -113,6 +142,25 @@ const CardBody = styled.div`
         margin-top: 1rem;
         font-size: 1.6rem;
         color: #74746f;
+    }
+
+    @media screen and (max-width: 1439px) {
+        div {
+            display: block;
+        }
+
+        p {
+            margin-bottom: 4rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h4 {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1.3rem;
+        }
     }
 `;
 
