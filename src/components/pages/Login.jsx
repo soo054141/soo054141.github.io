@@ -108,7 +108,7 @@ const Login = () => {
                 </div>
                 <div>
                     <p>
-                        <span>제작연도</span>2020
+                        <span>제작연도</span>2021
                     </p>
                     <p>
                         <span>팀구성&nbsp; &nbsp;</span>
@@ -125,21 +125,22 @@ const Login = () => {
                         회원가입, 로그인, 로그아웃 기능을 구현한 사이트
                         <br />
                         React의 styled-components로 홈페이지 디자인 및 구현,
-                        <br /> 회원가입 및 로그인 페이지 기능 구현, <br />
+                        <br /> 로컬 스토리지와 세션 스토리지를 이용해 회원가입
+                        및 로그아웃, <br />
                         React-router로 페이지 이동 구현
                     </p>
                 </div>
                 <div>
                     <h3>Repo</h3>
                     <p>
-                        <a href="https://github.com/yurimi95/Login-Page">
-                            https://github.com/yurimi95/Login-Page
+                        <a href="https://github.com/soo054141/Login">
+                            https://github.com/soo054141/Login
                         </a>
                     </p>
                 </div>
             </InfoWrap>
             <ImgWrap>
-                <a href="https://github.com/yurimi95/Login-Page">
+                <a href="https://soo054141.github.io/Login/">
                     <img src={imgB} alt="works1" />
                 </a>
             </ImgWrap>

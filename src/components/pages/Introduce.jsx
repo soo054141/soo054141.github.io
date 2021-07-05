@@ -44,26 +44,6 @@ const Name_title = styled.div`
     }
 `;
 
-const SkillSection = styled.div`
-    width: 100%;
-    padding: 5.6rem 0rem 5.6rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #d8ccdb;
-
-    @media screen and (max-width: 1439px) {
-        display: block;
-
-        h4 {
-            margin: 0% 10%;
-        }
-        p {
-            text-align: center;
-            padding-bottom: 4rem;
-        }
-    }
-`;
-
 const SectionTitle = styled.div`
     font-weight: bold;
     font-size: 1.9rem;
@@ -172,34 +152,6 @@ function Introduce() {
                     <h1>김유림</h1>
                     <h3>KIM YURIM</h3>
                 </Name_title>
-                <SkillSection>
-                    <SectionTitle>기술</SectionTitle>
-                    <SectionItems>
-                        <h4>HTML/CSS</h4>
-                        <p>
-                            - SASS(SCSS)와 같은 CSS Preprocessor를 사용할 수
-                            있습니다.
-                            <br />- CSS를 짤 때 중복되거나 불필요한 부분이
-                            없도록 노력합니다.
-                        </p>
-                    </SectionItems>
-                    <SectionItems>
-                        <h4>JavaScript</h4>
-                        <p>
-                            - ES2015 이후의 JavaScript 문법에 익숙합니다.
-                            <br />- Vanilla JavaScript를 통해 DOM을 다루는데
-                            익숙합니다.
-                        </p>
-                    </SectionItems>
-                    <SectionItems>
-                        <h4>React</h4>
-                        <p>
-                            - ES2015 이후의 JavaScript 문법에 익숙합니다.
-                            <br />- Vanilla JavaScript를 통해 DOM을 다루는데
-                            익숙합니다.
-                        </p>
-                    </SectionItems>
-                </SkillSection>
                 <IntroSection>
                     <SectionTitle>소개</SectionTitle>
                     <SectionItems>

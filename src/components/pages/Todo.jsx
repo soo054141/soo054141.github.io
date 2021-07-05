@@ -113,7 +113,9 @@ const Todo = () => {
     return (
         <Container>
             <ImgWrap>
-                <img src={imgC} alt="line" />
+                <a href="https://soo054141.github.io/Todo/">
+                    <img src={imgC} alt="line" />
+                </a>
             </ImgWrap>
             <InfoWrap>
                 <div>
@@ -122,7 +124,7 @@ const Todo = () => {
                 </div>
                 <div>
                     <p>
-                        <span>제작연도</span>2020
+                        <span>제작연도</span>2021
                     </p>
                     <p>
                         <span>팀구성&nbsp; &nbsp;</span>
@@ -149,8 +151,8 @@ const Todo = () => {
                 <div>
                     <h3>Repo</h3>
                     <p>
-                        <a href="https://github.com/soo054141/Todo-List">
-                            https://github.com/soo054141/Todo-List
+                        <a href="https://github.com/soo054141/Todo">
+                            https://github.com/soo054141/Todo
                         </a>
                     </p>
                 </div>
