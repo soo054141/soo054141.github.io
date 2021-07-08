@@ -6,8 +6,9 @@ import Cal from "./components/pages/Cal";
 import Introduce from "./components/pages/Introduce";
 import Footer from "./components/Footer";
 import TopBtn from "./components/pages/TopBtn";
+import ThemeToggle from "./components/theme/themeToggle";
 
-function Home() {
+const Home = () => {
     const ReviewRef = useRef();
 
     const handleIndexClick = () =>
@@ -20,6 +21,7 @@ function Home() {
         <>
             <div ref={ReviewRef}>
                 <Header />
+                <ThemeToggle>DarkMode</ThemeToggle>
             </div>
             <div>
                 <Login />
@@ -41,6 +43,6 @@ function Home() {
             </div>
         </>
     );
-}
+};
 
 export default Home;
