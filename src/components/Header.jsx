@@ -5,6 +5,11 @@ const Container = styled.div`
     width: 100%;
     margin: 0 auto;
 
+    h1 {
+        color: ${({ mode, theme }) =>
+            mode === "light" ? "#212121" : theme.colors.color};
+    }
+
     @media screen and (max-width: 767px) {
         height: 80em;
         display: flex;
@@ -21,11 +26,12 @@ const Title_box = styled.div`
     h3 {
         margin-left: 0.8rem;
         font-size: 3.5rem;
-        color: #6b6666;
+        color: ${({ mode, theme }) =>
+            mode === "light" ? "#6b6666" : theme.colors.color};
     }
+
     h1 {
         font-size: 12rem;
-        color: #212121;
     }
 
     @media screen and (max-width: 767px) {
@@ -44,11 +50,11 @@ const Name_box = styled.div`
     width: 20rem;
     margin: 11.19% 0% 0% 78.12%;
     font-weight: bold;
-    color: #3a3a3a;
+    color: ${({ mode, theme }) =>
+        mode === "light" ? "#3a3a3a" : theme.colors.color};
 
     h1 {
         font-size: 4rem;
-        color: #212121;
         margin-left: -0.5rem;
     }
     h3 {
@@ -86,9 +92,9 @@ const Name_box = styled.div`
     }
 `;
 
-const Header = () => {
+const Header = ({ mode }) => {
     return (
-        <Container>
+        <Container mode={mode}>
             <Title_box>
                 <h3>2021</h3>
                 <h1>Portfolio</h1>

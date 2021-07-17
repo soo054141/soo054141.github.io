@@ -15,14 +15,16 @@ const ToggleWrapper = styled.button`
     height: 36px;
     border-radius: 5px;
     cursor: pointer;
+    background-color: ${(props) => props.theme.colors.bgColor};
+    color: ${(props) => props.theme.colors.color};
 `;
 
-function ThemeToggle({ toggle, mode }) {
+function ThemeToggleBtn({ mode, click }) {
     return (
-        <ToggleWrapper onClick={toggle} mode={mode}>
-            {mode === "dark" ? "🌚" : "🌞"}
+        <ToggleWrapper onClick={click}>
+            {mode === "dark" ? "dark" : "light"}
         </ToggleWrapper>
     );
 }
 
-export default ThemeToggle;
+export default ThemeToggleBtn;

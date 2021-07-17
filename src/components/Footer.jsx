@@ -9,7 +9,7 @@ const Container = styled.div`
 
     @media screen and (max-width: 500px) {
         height: auto;
-        margin-bottom: 8rem;
+        padding-bottom: 5rem;
     }
 `;
 
@@ -19,6 +19,7 @@ const Messages = styled.div`
     margin: 0 auto;
     padding-top: 25%;
     text-align: center;
+
     div {
         background-color: #ede0e0;
         font-size: 3rem;
@@ -46,6 +47,7 @@ const Contacts = styled.div`
         background-color: #ede0e0;
         font-size: 1.8rem;
         padding-left: 7rem;
+        color: #bf8787;
     }
     p {
         font-size: 1.8rem;
@@ -68,7 +70,6 @@ const Footer = () => {
                     성장하는 FE개발자 <span>김유림</span>이었습니다
                 </p>
             </Messages>
-
             <Contacts>
                 <div>Contacts</div>
                 <p>soo054141@gmail.com</p>

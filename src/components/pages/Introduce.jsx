@@ -19,17 +19,18 @@ const Container = styled.div`
 
 const Name_title = styled.div`
     font-weight: bold;
-    color: #3a3a3a;
 
     h1 {
         font-size: 4rem;
-        color: #212121;
+        color: ${({ mode, theme }) =>
+            mode === "light" ? "#212121" : theme.colors.color};
     }
 
     h3 {
         margin-left: 0.3rem;
         font-size: 2rem;
-        color: #3a3a3a;
+        color: ${({ mode, theme }) =>
+            mode === "light" ? "#3a3a3a" : theme.colors.color};
     }
 
     @media screen and (max-width: 768px) {
@@ -144,9 +145,9 @@ const CardBody = styled.div`
     }
 `;
 
-function Introduce() {
+function Introduce({ mode }) {
     return (
-        <Wrap>
+        <Wrap mode={mode}>
             <Container>
                 <Name_title>
                     <h1>김유림</h1>

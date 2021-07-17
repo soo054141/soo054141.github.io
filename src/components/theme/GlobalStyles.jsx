@@ -19,7 +19,6 @@ const GlobalStyles = createGlobalStyle`
         vertical-align: baseline;
     }
     body{
-        background-color: #f4f4f2;
         line-height: 1;
         font-family: 'Noto Sans KR', sans-serif;
         
