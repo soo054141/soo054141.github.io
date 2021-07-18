@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import imgB from "../images/login_page.png";
+import useScrollFadeIn from "./useScrollFadeIn";
 
 const Container = styled.div`
     width: 100%;
@@ -99,8 +100,9 @@ const ImgWrap = styled.div`
 `;
 
 const Login = () => {
+    const animatedItem = useScrollFadeIn();
     return (
-        <Container>
+        <Container {...animatedItem}>
             <InfoWrap>
                 <div>
                     <h1>회원가입, 로그인 페이지</h1>

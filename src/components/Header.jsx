@@ -94,12 +94,12 @@ const Name_box = styled.div`
 
 const Header = ({ mode }) => {
     return (
-        <Container mode={mode}>
-            <Title_box>
+        <Container>
+            <Title_box mode={mode}>
                 <h3>2021</h3>
                 <h1>Portfolio</h1>
             </Title_box>
-            <Name_box>
+            <Name_box mode={mode}>
                 <h1>김유림</h1>
                 <h3>KIM YURIM</h3>
                 <p>soo054141@gmail.com</p>

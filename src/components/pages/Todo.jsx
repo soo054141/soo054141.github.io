@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import imgC from "../images/box3.png";
+import useScrollFadeIn from "./useScrollFadeIn";
 
 const Container = styled.div`
     width: 100%;
@@ -110,8 +111,9 @@ const ImgWrap = styled.div`
 `;
 
 const Todo = () => {
+    const animatedItem = useScrollFadeIn();
     return (
-        <Container>
+        <Container {...animatedItem}>
             <ImgWrap>
                 <a href="https://soo054141.github.io/Todo/">
                     <img src={imgC} alt="line" />
