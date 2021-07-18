@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { MdWbSunny } from "react-icons/md";
+import { FaRegMoon } from "react-icons/fa";
 
 const ToggleWrapper = styled.button`
     position: fixed;
@@ -11,7 +13,7 @@ const ToggleWrapper = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 50px;
     height: 36px;
     border-radius: 5px;
     cursor: pointer;
@@ -22,7 +24,7 @@ const ToggleWrapper = styled.button`
 function ThemeToggleBtn({ mode, click }) {
     return (
         <ToggleWrapper onClick={click}>
-            {mode === "dark" ? "dark" : "light"}
+            {mode === "dark" ? <FaRegMoon /> : <MdWbSunny />}
         </ToggleWrapper>
     );
 }

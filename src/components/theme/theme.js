@@ -1,7 +1,7 @@
 export const dark = {
     colors: {
-        bgColor: "#121212",
-        color: "#e2e0e0",
+        bgColor: "#202124",
+        color: "#bdc1c6",
     },
 };
 
