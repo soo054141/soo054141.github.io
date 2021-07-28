@@ -5,12 +5,14 @@ import useScrollFadeIn from "./useScrollFadeIn";
 
 const Container = styled.div`
     width: 100%;
+    height: 90rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @media screen and (max-width: 767px) {
+        height: auto;
         margin-bottom: 8rem;
         flex-direction: column;
     }
@@ -20,7 +22,6 @@ const InfoWrap = styled.div`
     width: 48%;
     height: 70rem;
     font-weight: bold;
-    padding-top: 5rem;
 
     div {
         width: 88%;
@@ -34,7 +35,7 @@ const InfoWrap = styled.div`
         font-size: 2rem;
     }
     h3 {
-        margin-top: 7rem;
+        margin-top: 5rem;
         font-size: 1.9rem;
     }
     span {
@@ -93,7 +94,7 @@ const InfoWrap = styled.div`
 const ImgWrap = styled.div`
     width: 48%;
     height: 70rem;
-    padding: 8rem 4rem;
+    padding: 9rem 4rem;
     display: flex;
     align-items: center;
 
@@ -104,6 +105,7 @@ const ImgWrap = styled.div`
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         height: 60rem;
     }
+
     @media screen and (max-width: 767px) {
         width: 100%;
         height: 51.3rem;
@@ -148,6 +150,14 @@ const Todo = () => {
                         <br />
                         일정을 추가 및 삭제, 완료된 목록을 체크하는 기능이
                         있습니다.
+                    </p>
+                </div>
+                <div>
+                    <h3>View</h3>
+                    <p>
+                        <a href="https://soo054141.github.io/Todo/">
+                            https://soo054141.github.io/Todo/
+                        </a>
                     </p>
                 </div>
                 <div>

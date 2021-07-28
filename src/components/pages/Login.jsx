@@ -5,12 +5,14 @@ import useScrollFadeIn from "./useScrollFadeIn";
 
 const Container = styled.div`
     width: 100%;
+    height: 90rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @media screen and (max-width: 767px) {
+        height: auto;
         margin-bottom: 5rem;
         flex-direction: column-reverse;
     }
@@ -20,7 +22,7 @@ const InfoWrap = styled.div`
     width: 48%;
     height: 70rem;
     font-weight: bold;
-    padding-top: 5rem;
+    padding-top: 2rem;
 
     div {
         width: 88%;
@@ -34,7 +36,7 @@ const InfoWrap = styled.div`
         font-size: 2rem;
     }
     h3 {
-        margin-top: 7rem;
+        margin-top: 5rem;
         font-size: 1.9rem;
     }
     span {
@@ -84,7 +86,7 @@ const InfoWrap = styled.div`
 const ImgWrap = styled.div`
     width: 48%;
     height: 70rem;
-    padding: 8rem 4rem;
+    padding: 9rem 4rem;
     display: flex;
     align-items: center;
     img {
@@ -130,6 +132,14 @@ const Login = () => {
                         <br /> 로컬 스토리지와 세션 스토리지를 이용해 회원가입
                         및 로그아웃, <br />
                         React-router로 페이지 이동 구현
+                    </p>
+                </div>
+                <div>
+                    <h3>View</h3>
+                    <p>
+                        <a href="https://soo054141.github.io/Login/">
+                            https://soo054141.github.io/Login/
+                        </a>
                     </p>
                 </div>
                 <div>

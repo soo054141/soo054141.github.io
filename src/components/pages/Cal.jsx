@@ -5,12 +5,14 @@ import useScrollFadeIn from "./useScrollFadeIn";
 
 const Container = styled.div`
     width: 100%;
+    height: 90rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @media screen and (max-width: 767px) {
+        height: auto;
         margin-bottom: 8rem;
         flex-direction: column-reverse;
     }
@@ -20,8 +22,7 @@ const InfoWrap = styled.div`
     width: 48%;
     height: 70rem;
     font-weight: bold;
-    padding-top: 5rem;
-
+    padding-top: 2rem;
     div {
         width: 88%;
         margin: 4.5% 0% 0% 11.428%;
@@ -34,7 +35,7 @@ const InfoWrap = styled.div`
         font-size: 2rem;
     }
     h3 {
-        margin-top: 7rem;
+        margin-top: 5rem;
         font-size: 1.9rem;
     }
     span {
@@ -133,6 +134,14 @@ const Cal = () => {
                         Equal 사인을 누르지 않고도 다른 기호를 누르면 화면에
                         <br />
                         계산된 결과 값이 출력됩니다.
+                    </p>
+                </div>
+                <div>
+                    <h3>View</h3>
+                    <p>
+                        <a href="https://yurimi95.github.io/Calculator/">
+                            https://yurimi95.github.io/Calculator/
+                        </a>
                     </p>
                 </div>
                 <div>
