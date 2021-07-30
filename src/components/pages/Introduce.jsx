@@ -204,8 +204,7 @@ function Introduce({ mode }) {
                             </div>
                             <p>
                                 패스트캠퍼스에서 주관하는 취업 완성 스쿨 1기
-                                선발 과정에 참여, Python의 자료구조와 알고리즘을
-                                경험
+                                선발 과정에 참여, 자료구조와 알고리즘 공부
                             </p>
                         </CardBody>
                         <CardBody>
@@ -215,7 +214,7 @@ function Introduce({ mode }) {
                             </div>
                             <p>
                                 이노베이션 아카데미의 SW 프로그램인 1개월
-                                집중교육(La Piscine) 과정 참여,리눅스 환경으로
+                                집중교육(La Piscine) 과정 참여, 리눅스 환경으로
                                 셸 스크립트와 C언어를 경험
                             </p>
                         </CardBody>
