@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
 import Login from "./components/pages/Login";
 import Todo from "./components/pages/Todo";
-import Cal from "./components/pages/Cal";
+import Animal from "./components/pages/Animal";
 import Introduce from "./components/pages/Introduce";
 import Footer from "./components/Footer";
 import TopBtn from "./components/pages/TopBtn";
@@ -42,13 +42,13 @@ const Home = () => {
                     <Header mode={themeMode === "light" ? "light" : "dark"} />
                 </div>
                 <div>
-                    <Login />
+                    <Animal />
                 </div>
                 <div>
                     <Todo />
                 </div>
                 <div>
-                    <Cal />
+                    <Login />
                 </div>
                 <div>
                     <Introduce

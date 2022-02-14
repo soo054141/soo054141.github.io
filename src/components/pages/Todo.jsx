@@ -132,11 +132,11 @@ const Todo = () => {
                     </p>
                     <p>
                         <span>팀구성&nbsp; &nbsp;</span>
-                        개인 100%
+                        개인
                     </p>
                     <p>
                         <span>사용기술</span>
-                        JavaScript, styled-components, ReactJS
+                        ReactJS, React Hooks API, styled-components
                     </p>
                 </div>
                 <div>

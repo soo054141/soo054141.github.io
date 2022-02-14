@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import imgA from "../images/box2.png";
+import animalImg from "../images/animal.gif"
 import useScrollFadeIn from "./useScrollFadeIn";
 
 const Container = styled.div`
@@ -91,6 +91,9 @@ const ImgWrap = styled.div`
 
     img {
         width: 100%;
+        padding: 20px;
+        border: 2px solid #797979;
+        border-radius: 10px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -102,64 +105,60 @@ const ImgWrap = styled.div`
     }
 `;
 
-const Cal = () => {
+const Animal = () => {
     const animatedItem = useScrollFadeIn();
     return (
         <Container {...animatedItem}>
             <InfoWrap>
                 <div>
-                    <h1>계산기</h1>
-                    <h2>[Calculator]</h2>
+                    <h1>유기동물 정보 커뮤니티</h1>
+                    <h2>[반려in]</h2>
                 </div>
                 <div>
                     <p>
-                        <span>제작연도</span>2020
+                        <span>제작연도</span>2022
                     </p>
                     <p>
                         <span>팀구성&nbsp; &nbsp;</span>
-                        개인 100%
+                        Front- 4명/ Back-2명
                     </p>
                     <p>
                         <span>사용기술</span>
-                        Vanila JS, CSS3, HTML5
+                        JavaScript, CSS3, HTML5, Node.js
                     </p>
                 </div>
                 <div>
                     <h3>상세설명</h3>
                     <p>
-                        바닐라 자바스크립트로 간단한 사칙연산을 할 수 있는
+                        유기동물 입양 정보 획득 및 반려 동물 정보 공유 및
+                        <br /> 
+                        소통을 할 수 있는 커뮤니티 사이트
                         <br />
-                        계산기 기능을 구현하였습니다.
+                        유기동물 공공 API를 이용하여 현재 보호중인 동물의
+                        <br /> 
+                        현황 및 통계를 확인할 수 있습니다. 이를 통해 새로 생긴 가족이
                         <br />
-                        Equal 사인을 누르지 않고도 다른 기호를 누르면 화면에
+                        쉽게 적응할 수 있도록 유저간 정보 공유가
                         <br />
-                        계산된 결과 값이 출력됩니다.
+                        가능한 게시판 기능이 있습니다.
                     </p>
                 </div>
                 <div>
                     <h3>View</h3>
                     <p>
-                        <a href="https://yurimi95.github.io/Calculator/">
-                            https://yurimi95.github.io/Calculator/
-                        </a>
-                    </p>
-                </div>
-                <div>
-                    <h3>Repo</h3>
-                    <p>
-                        <a href="https://yurimi95.github.io/Calculator/">
-                            https://yurimi95.github.io/Calculator/
+                        <a href="https://elice3.herokuapp.com/">
+                        https://elice3.herokuapp.com/
                         </a>
                     </p>
                 </div>
             </InfoWrap>
             <ImgWrap>
                 <a href="https://yurimi95.github.io/Calculator/">
-                    <img src={imgA} alt="line" />
+                    <img src={animalImg} alt="line" />
                 </a>
             </ImgWrap>
         </Container>
     );
 };
 
-export default Cal;
+export default Animal;

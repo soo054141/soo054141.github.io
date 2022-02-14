@@ -199,12 +199,12 @@ function Introduce({ mode }) {
                     <SectionItems>
                         <CardBody>
                             <div>
-                                <h4>패스트캠퍼스 취업완성스쿨 1기 선발과정</h4>
-                                <h5>2021-02 ~ 2021-03</h5>
+                                <h4>엘리스 SW Engineer Track</h4>
+                                <h5>2021-10 ~ 2022-02</h5>
                             </div>
                             <p>
-                                패스트캠퍼스에서 주관하는 취업 완성 스쿨 1기
-                                선발 과정에 참여, 자료구조와 알고리즘 공부
+                                엘리스 SW Engineer Track에서 웹 프론트엔드
+                                과정에 필요한 JavaScript, React.js, node.js 등 학습
                             </p>
                         </CardBody>
                         <CardBody>

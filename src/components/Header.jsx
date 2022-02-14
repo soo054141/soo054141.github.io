@@ -96,7 +96,7 @@ const Header = ({ mode }) => {
     return (
         <Container>
             <Title_box mode={mode}>
-                <h3>2021</h3>
+                <h3>2022</h3>
                 <h1>Portfolio</h1>
             </Title_box>
             <Name_box mode={mode}>
