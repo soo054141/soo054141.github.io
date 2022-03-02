@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import imgC from "../images/box3.png";
+import gitFarm from "../images/gitfarm.png";
 import useScrollFadeIn from "./useScrollFadeIn";
 
 const Container = styled.div`
@@ -20,7 +20,6 @@ const Container = styled.div`
 
 const InfoWrap = styled.div`
     width: 48%;
-    height: 70rem;
     font-weight: bold;
 
     div {
@@ -97,9 +96,13 @@ const ImgWrap = styled.div`
     padding: 9rem 4rem;
     display: flex;
     align-items: center;
+    margin-left: 40px;
 
     img {
-        width: 100%;
+        width: 375px;
+        padding: 20px;
+        border: 2px solid #797979;
+        border-radius: 10px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -117,22 +120,23 @@ const Todo = () => {
     return (
         <Container {...animatedItem}>
             <ImgWrap>
-                <a href="https://soo054141.github.io/Todo/">
-                    <img src={imgC} alt="line" />
+                <a href="https://elice-kdt-sw-1st-team1.elicecoding.com/">
+                    <img src={gitFarm} alt="line" />
+                    {/* <GitFarm /> */}
                 </a>
             </ImgWrap>
             <InfoWrap>
                 <div>
-                    <h1>일정 관리 페이지</h1>
-                    <h2>[To-do List]</h2>
+                    <h1>Git 잔디 관리 서비스</h1>
+                    <h2>[Git Farm]</h2>
                 </div>
                 <div>
                     <p>
-                        <span>제작연도</span>2021
+                        <span>제작연도</span>2022
                     </p>
                     <p>
                         <span>팀구성&nbsp; &nbsp;</span>
-                        개인
+                        Front - 3명/ Back - 2명
                     </p>
                     <p>
                         <span>사용기술</span>
@@ -142,32 +146,40 @@ const Todo = () => {
                 <div>
                     <h3>상세설명</h3>
                     <p>
-                        할 일 목록을 추가, 삭제하는 기능을 구현한 페이지
+                        Git 잔디 관리를 즐겁고 꾸준하게 할 수 있도록 장려하고 도와주는 서비스
                         <br />
-                        React의 styled-components로 디자인 및 웹 사이트 구축,
-                        <br /> 사용자가 이용하는 날짜를 실시간으로 반영하여
-                        보여주는 기능과
+                        
                         <br />
-                        일정을 추가 및 삭제, 완료된 목록을 체크하는 기능이
-                        있습니다.
+                        기존 GitHub 페이지에서 제공하는 잔디 그래프 형태 대신에,
+                        <br />
+                        캘린더와 차트 형태로 데이터를 시각화하여 제공하기 때문에 
+                        <br />
+                        유저가 좀 더 쉽게 데이터를 확인할 수 있습니다.
+                        <br /> 
+                        커밋 수에 따라 채워지는 농장 꾸미기, 랭킹 시스템, 배지 획득 등의
+                        <br /> 
+                        다양한 기능으로 게임하는 듯한 재미와 성취감을 
+                        느낄 수 있게 하였습니다.
+                        <br />
+                        랭킹 시스템을 도입하여 유저들간의 선의의 경쟁을 유도할 수 있게 하였습니다.
                     </p>
                 </div>
                 <div>
                     <h3>View</h3>
                     <p>
-                        <a href="https://soo054141.github.io/Todo/">
-                            https://soo054141.github.io/Todo/
+                        <a href="https://elice-kdt-sw-1st-team1.elicecoding.com/">
+                        https://elice-kdt-sw-1st-team1.elicecoding.com/
                         </a>
                     </p>
                 </div>
-                <div>
+                {/* <div>
                     <h3>Repo</h3>
                     <p>
                         <a href="https://github.com/soo054141/Todo">
                             https://github.com/soo054141/Todo
                         </a>
                     </p>
-                </div>
+                </div> */}
             </InfoWrap>
         </Container>
     );

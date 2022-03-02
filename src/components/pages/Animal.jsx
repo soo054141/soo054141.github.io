@@ -120,7 +120,7 @@ const Animal = () => {
                     </p>
                     <p>
                         <span>팀구성&nbsp; &nbsp;</span>
-                        Front- 4명/ Back-2명
+                        Front - 4명/ Back - 2명
                     </p>
                     <p>
                         <span>사용기술</span>
@@ -133,6 +133,7 @@ const Animal = () => {
                         유기동물 입양 정보 획득 및 반려 동물 정보 공유 및
                         <br /> 
                         소통을 할 수 있는 커뮤니티 사이트
+                        <br /> 
                         <br />
                         유기동물 공공 API를 이용하여 현재 보호중인 동물의
                         <br /> 
