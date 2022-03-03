@@ -122,7 +122,6 @@ const Todo = () => {
             <ImgWrap>
                 <a href="https://elice-kdt-sw-1st-team1.elicecoding.com/">
                     <img src={gitFarm} alt="line" />
-                    {/* <GitFarm /> */}
                 </a>
             </ImgWrap>
             <InfoWrap>
@@ -172,14 +171,14 @@ const Todo = () => {
                         </a>
                     </p>
                 </div>
-                {/* <div>
+                <div>
                     <h3>Repo</h3>
                     <p>
-                        <a href="https://github.com/soo054141/Todo">
-                            https://github.com/soo054141/Todo
+                        <a href="https://github.com/soo054141/gitfarm">
+                        https://github.com/soo054141/gitfarm
                         </a>
                     </p>
-                </div> */}
+                </div>
             </InfoWrap>
         </Container>
     );
